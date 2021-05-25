@@ -1,0 +1,130 @@
+body {
+  background-color: lawngreen;
+}
+
+.contenedor {
+  background-color: azure;
+}
+
+header {
+  background-color: crimson;
+}
+
+nav {
+  background-color: darkolivegreen;
+}
+
+section {
+  background-color: lightblue;
+}
+
+footer {
+  background-color: indigo;
+}
+
+/* AGREGAMOS UN BORDE DE TIPO DOTTED */
+.borde1 {
+  border-style: dotted;
+}
+
+.borde2 {
+  border-style: dashed;
+}
+
+.borde3 {
+  border-style: solid;
+}
+
+.borde4 {
+  border-style: double;
+}
+
+.borde5 {
+  border-style: groove;
+}
+
+.borde6 {
+  border-style: ridge;
+}
+
+.borde7 {
+  border-style: inset;
+}
+
+.borde8 {
+  border-style: outset;
+}
+
+.borde9 {
+  border-style: none;
+}
+
+.borde10 {
+  border-style: hidden;
+}
+
+/* AGREGAMOS UN BORDE DE TIPO COMBINADO.
+CUANDO AGREGAMOS BORDES DE TIPO COMBINADO LA SINTAXIS SERÍA LA SIGUIENTE:
+2: (ARRIBA, ABAJO) (DERECHA, IZQUIERDA)
+3: (ARRIBA) (IZQUIERDA, DERECHA) (ABAJO)
+4: (ARRIBA) (DERECHA) (ABAJO) (IZQUIERDA) */
+
+.borde11 {
+  border-style: dotted dashed solid double;
+}
+
+.borde12 {
+  border-style: dotted;
+  border-width: 10px;
+}
+
+.borde13 {
+  border-style: dashed;
+  border-width: medium;
+}
+
+.borde14 {
+  border-style: solid;
+  border-width: 25px 40px 7px 14px;
+}
+
+/* BORDES CON COLOR */
+.borde15 {
+  border-style: solid;
+  border-color: midnightblue;
+}
+
+.borde16 {
+  border-style: solid;
+  border-color: midnightblue gold sienna slateblue;
+}
+
+/* APLICAMOS BORDES SOLO A UN LUGAR ESPECÍFICO */
+.borde17 {
+  border-top-style: dashed;
+}
+
+.borde18 {
+  border-bottom-style: dotted;
+}
+
+.borde19 {
+  border-left-style: groove;
+}
+
+.borde20 {
+  border-right-style: ridge;
+}
+
+/* APLICAMOS BORDES REDONDEADOS */
+.borde21 {
+  border-style: solid;
+  border-width: medium;
+  border-radius: 5px;
+}
+
+.borde22 {
+  border-style: solid;
+  border-width: 25px;
+  border-radius: 15px;
+}

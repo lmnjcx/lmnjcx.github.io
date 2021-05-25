@@ -1,0 +1,71 @@
+.estatico {
+  position: static;
+  border: 5px solid blue;
+}
+
+.relativa {
+  position: relative;
+  border: 5px solid goldenrod;
+  left: 60px;
+}
+
+.fija {
+  position: fixed;
+  top: 0;
+  left: 400px;
+  border: 5px solid wheat;
+}
+
+.contenedorrelativo {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border: 5px solid darkmagenta;
+}
+
+.contenedorabsoluto {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 250px;
+  height: 250px;
+  border: 5px solid darkolivegreen;
+}
+
+.ancla {
+  position: sticky;
+  padding: 5px;
+  top: 0;
+  background-color: darksalmon;
+  border: darkslateblue solid 5px;
+}
+
+.contenido {
+  padding-bottom: 1000px;
+}
+
+img {
+  width: 100px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.contenedorimagen {
+  position: relative;
+  max-width: 1000px;
+}
+
+.contenedorimagen img {
+  width: 100%;
+  height: auto;
+  opacity: 40%;
+}
+
+.textoderecho {
+  position: absolute;
+  top: 200px;
+  right: 20px;
+}

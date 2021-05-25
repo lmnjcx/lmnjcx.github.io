@@ -1,0 +1,115 @@
+/* APLICAREMOS UN ESTILO PARA DARLE UN COLOR DE FONDO A LA PAGINA */
+
+/* APLICAMOS COLORES A CADA UNA DE LAS SECCIONES DE LA PAGINA */
+body {
+  background-color: darkcyan;
+}
+
+.contenedor {
+  background-color: rgb(126, 202, 96);
+}
+
+.cabecera {
+  background-color: chocolate;
+}
+
+.menu {
+  background-color: crimson;
+}
+
+.cuerpo {
+  background-color: darkmagenta;
+}
+
+.pie {
+  background-color: darkorange;
+}
+
+/* AGREGAMOS UNA IMAGEN COMO FONDO DE UN PARRAFO */
+.parrafoimagen {
+  background-image: url("/img/interpol.jpg");
+}
+
+/* AGREGAMOS UN COLOR DE FONDO CON TRANSPARENCIA A UN PARRAFO */
+.parrafotransparencia {
+  background-color: black;
+  opacity: 50%;
+  color: aqua;
+}
+
+/* AGREGAMOS UNA IMAGEN DE FONDO PERO QUIERE QUE ESTA SE REPITA */
+.parrafoimagenrepetir {
+  background-image: url("/img/html5ycss3.png");
+}
+
+/* NO SE REPITE */
+.parrafoimagennorepetir {
+  background-image: url("/img/html5ycss3.png");
+  background-repeat: no-repeat;
+}
+
+.parrafoimagentamaño {
+  background-image: url("/img/html5ycss3.png");
+  background-size: 30px;
+}
+
+.parrafoimagenrepetirhorizontal {
+  background-image: url("/img/html5ycss3.png");
+  background-repeat: repeat-x;
+  background-size: 30px;
+}
+
+.parrafoimagenrepetirvertical {
+  background-image: url("/img/html5ycss3.png");
+  background-repeat: repeat-y;
+  background-size: 30px;
+}
+
+.parrafoimagencentrar {
+  background-image: url("/img/html5ycss3.png");
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.parrafoimagenizquierda {
+  background-image: url("/img/html5ycss3.png");
+  background-size: 30px;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.parrafoimagenderecha {
+  background-image: url("/img/html5ycss3.png");
+  background-size: 30px;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.parrafoimagenarriba {
+  background-image: url("/img/html5ycss3.png");
+  background-size: 30px;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.parrafoimagenabajo {
+  background-image: url("/img/html5ycss3.png");
+  background-size: 30px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.parrafoimagensupder {
+  background-image: url("/img/html5ycss3.png");
+  background-size: 30px;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.parrafoimageninfizq {
+  background-image: url("/img/html5ycss3.png");
+  background-size: 30px;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}

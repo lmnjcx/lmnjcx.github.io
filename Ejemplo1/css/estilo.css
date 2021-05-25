@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans";
+  font-size: 16px;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+header {
+  background: url("/img/foto2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  max-height: 600px;
+}
+
+header nav {
+  margin: 40px 0;
+  text-align: right;
+}
+
+header nav a {
+  margin: 0 20px;
+  padding-bottom: 9px;
+  text-decoration: none;
+  border-bottom: 2px solid grey transparent;
+  color: white;
+}
+
+header nav a:hover {
+  border-bottom: 2px solid yellow;
+}
+
+header .contenedortexto {
+  justify-content: center;
+  align-content: center;
+  margin: 190px 0;
+}
+
+header .contenedortexto .texto {
+  border: 2px solid grey;
+  border-radius: 3px;
+  text-align: center;
+  padding: 20px 60px;
+}
+
+header .contenedortexto .texto h1,
+header .contenedortexto .texto h2 {
+  color: white;
+  font-weight: bolder;
+  margin: 0;
+}
+
+header .contenedortexto .texto .nombre {
+  margin-bottom: 10px;
+  font-size: 50px;
+}
+
+header .contenedortexto .texto .profesion {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+/* FIN CABECERA */
+
+/* CUERPO */
+
+.principal .acercade {
+  text-align: center;
+}
+
+.principal .acercade .foto {
+  margin-top: 60px;
+}
+
+.principal .acercade .foto img {
+  border-radius: 50%;
+  vertical-align: top;
+  border: 5px, grey solid;
+}
+
+.principal .acercade .texto {
+  font-weight: 600;
+  width: 80%;
+  margin: 40px auto 60px auto;
+}
+
+.principal .acercade .texto .titulo {
+  font-size: 35px;
+  margin-bottom: 40px;
+  font-weight: bolder;
+  color: olivedrab;
+}
+
+.principal .trabajos {
+  background: darkgrey;
+  padding: 60px 0;
+}
+
+/* .principal .trabajos .contenedor{ */
+
+.principal .trabajos .titulo {
+  font-size: 35px;
+  margin-bottom: 60px;
+  font-weight: bolder;
+  color: darkmagenta;
+  text-align: center;
+}
+
+.principal .trabajos .contenedortrabajos {
+  justify-content: space-between;
+}
+
+.principal .trabajos .contenedortrabajos .trabajo {
+  width: 25%;
+  margin-bottom: 40px;
+}
+
+.principal .trabajos .contenedortrabajos .trabajo .imagen {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.principal .trabajos .contenedortrabajos .trabajo .imagen img {
+  vertical-align: top;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.principal .trabajos .contenedortrabajos .trabajo .descripcion {
+  text-align: center;
+}
+
+.principal .trabajos .contenedortrabajos .trabajo .descripcion .nombre {
+  font-weight: bolder;
+  color: darkmagenta;
+  margin-bottom: 10px;
+}
+
+.principal .trabajos .contenedortrabajos .trabajo .descripcion .categoria {
+  font-size: 15px;
+  color: darkslategray;
+}
+
+/* FIN TRABAJOS  */
+/* FIN CUERPO */
+
+/* PIE */
+
+footer .contactanos {
+  padding: 60px;
+}
+
+footer .contactanos .titulo {
+  font-size: 35px;
+  margin-bottom: 60px;
+  font-weight: bolder;
+  color: darkmagenta;
+  text-align: center;
+}
+
+footer .contactanos .formulario {
+  justify-content: space-between;
+}
+
+footer .redesociales {
+  background: darkslateblue;
+  padding: 60px 0;
+}
+
+footer .redesociales .contenedor {
+  justify-content: center;
+}
+
+footer .redesociales .contenedor a {
+  color: white;
+  text-align: center;
+  width: 100px;
+  font: 30px;
+  padding: 15px 0;
+  margin: 0 20px;
+  border-radius: 3px;
+}
+
+footer .redesociales .contenedor .facebook:hover {
+  background: red;
+}
+
+footer .redesociales .contenedor .instagram:hover {
+  background: red;
+}
+
+footer .redesociales .contenedor .youtube:hover {
+  background: red;
+}
+
+footer .redesociales .contenedor .twitter:hover {
+  background: red;
+}
+
+footer .redesociales .contenedor .github:hover {
+  background: red;
+}

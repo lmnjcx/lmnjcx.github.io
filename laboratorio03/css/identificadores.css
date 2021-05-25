@@ -1,0 +1,25 @@
+#menuprincipal {
+  color: darkblue;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+#titulo1 {
+  color: darkmagenta;
+  font-weight: bolder;
+}
+
+#titulo2 {
+  color: darkolivegreen;
+  font-weight: bolder;
+}
+
+#parrafo1 {
+  color: darkred;
+  font-style: italic;
+}
+
+#parrafo2 {
+  color: chartreuse;
+  font-style: italic;
+}

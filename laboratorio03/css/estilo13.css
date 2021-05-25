@@ -1,0 +1,64 @@
+body {
+  background-color: darkgreen;
+}
+
+.contenedor {
+  background-color: white;
+}
+
+/* APLICAMOS ESTILOS A LA TABLA */
+
+table {
+  width: 100%;
+  border: 4px solid darkorange;
+  border-collapse: collapse;
+}
+
+thead th,
+tbody td {
+  border: 4px solid darkmagenta;
+}
+
+/* AUMENTAR EL TAMAÑO DE th */
+/* ALINEAMOS LOS DATOS DEL TH AL CENTRO Y SUPERIOR */
+
+th {
+  height: 50px;
+  text-align: center;
+  vertical-align: top;
+  background-color: orange;
+}
+
+/* AGREGAMOS UN FONDO Y COLOR A LAS LETRAS CUANDO PASEMOS POR LAS FILAS  */
+
+table tbody tr:hover {
+  background-color: black;
+  color: white;
+}
+
+/* APLICAMOS ESTILOS PARA LA TABLA 1 */
+
+.tabla1 {
+  font-family: arial;
+  border-collapse: collapse;
+  width: 100%;
+  border: gainsboro 1px solid;
+}
+
+.tabla1 td,
+.tabla1 th {
+  border: 1px solid gainsboro;
+}
+
+.tabla1 th {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  background-color: darkblue;
+  color: white;
+}
+
+.tabla1 tr:hover {
+  background-color: cyan;
+  color: black;
+}

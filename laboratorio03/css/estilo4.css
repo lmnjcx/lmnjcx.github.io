@@ -1,0 +1,65 @@
+body {
+  background-color: slateblue;
+}
+
+.contenedor {
+  background-color: springgreen;
+}
+
+.caja1 {
+  background-color: ivory;
+  border-style: solid;
+  border-width: 5px;
+  border-color: indigo;
+}
+
+/* AGREGAR MÁRGENES PARA CADA ETIQUETA DIV */
+
+.caja2 {
+  background-color: ivory;
+  border-style: solid;
+  border-width: 5px;
+  border-color: indigo;
+  margin-left: 40px;
+}
+
+.caja3 {
+  background-color: ivory;
+  border-style: solid;
+  border-width: 5px;
+  border-color: indigo;
+  margin-right: 40px;
+}
+
+.caja4 {
+  background-color: ivory;
+  border-style: solid;
+  border-width: 5px;
+  border-color: indigo;
+  margin-top: 40px;
+}
+
+.caja5 {
+  background-color: ivory;
+  border-style: solid;
+  border-width: 5px;
+  border-color: indigo;
+  margin-bottom: 40px;
+}
+
+.caja6 {
+  background-color: ivory;
+  border-style: solid;
+  border-width: 5px;
+  border-color: indigo;
+  margin: 20px 80px 30px 10px;
+}
+
+/* ALINEA AL DIV AL MEDIO DE TODO */
+.caja7 {
+  background-color: ivory;
+  border-style: solid;
+  border-width: 5px;
+  border-color: indigo;
+  margin: auto;
+}

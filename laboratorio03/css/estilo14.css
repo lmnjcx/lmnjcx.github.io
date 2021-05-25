@@ -1,0 +1,175 @@
+li {
+  display: inline;
+}
+
+span {
+  display: block;
+}
+
+a {
+  display: block;
+}
+
+p span {
+  display: inline-block;
+  width: 25%;
+}
+
+.elementolista p {
+  display: list-item;
+  margin-left: 50px;
+}
+
+.contenedor {
+  display: table;
+  border-spacing: 10px;
+}
+
+.contenido {
+  display: table-row;
+}
+
+.secundario,
+.principal,
+.lateral {
+  display: table-cell;
+}
+
+.principal {
+  width: 60%;
+}
+
+.contenido,
+.lateral {
+  width: 20%;
+}
+
+.flexible {
+  display: flex;
+  margin-bottom: 10px;
+  background-color: gainsboro;
+}
+
+.flexible p {
+  width: 25%;
+  border: black 1px solid;
+}
+
+.flexible2 {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: blanchedalmond;
+}
+
+.flexible2 p {
+  width: 200px;
+  border: black 1px solid;
+  margin: 2px;
+}
+
+.flexible3 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(197, 204, 226, 0.747);
+}
+
+.flexible3 p {
+  width: 200px;
+  border: black 1px solid;
+  margin: 2px;
+}
+
+.flexible4 {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: rgb(178, 164, 187);
+}
+
+.flexible4 p {
+  width: 200px;
+  border: black 1px solid;
+  margin: 2px;
+}
+
+/* NO-WRAP ESTABLECE QUE TODOS LOS ELEMENTOS ESTEN EN UNA MISMA LINEA */
+
+.flexible5 {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: rgb(136, 65, 56);
+}
+
+.flexible5 p {
+  width: 200px;
+  border: black 1px solid;
+  margin: 2px;
+}
+
+/* WRAP ESTABLECE QUE TODOS LOS ELEMENTOS SE COLOQUEN EN VARIAS LINEAS */
+
+.flexible6 {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(116, 60, 151);
+}
+
+.flexible6 p {
+  width: 200px;
+  border: black 1px solid;
+  margin: 2px;
+}
+
+/* WRAP-REVERSE ES LO MISMO QUE EL WRAP PERO VA DE ABAJO HACIA ARRIBA */
+
+.flexible7 {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  background-color: rgb(24, 110, 190);
+}
+
+.flexible7 p {
+  width: 200px;
+  border: black 1px solid;
+  margin: 2px;
+}
+
+/* PERMITE COMBINAR LAS PROPIEDADES DE FLEX DIRECTION Y FLEX WRAP */
+
+.flexible8 {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  background-color: rgb(102, 163, 74);
+}
+
+.flexible8 p {
+  width: 200px;
+  border: black 1px solid;
+  margin: 2px;
+}
+
+.flexible9 {
+  display: flex;
+  flex-flow: wrap row-reverse;
+  background-color: rgb(194, 129, 103);
+}
+
+.flexible9 p {
+  width: 200px;
+  border: black 1px solid;
+  margin: 2px;
+}
+
+/* TAMBIEN SE PUEDEN COMBINAR POR SEPARADO */
+
+.flexible10 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  background-color: rgb(60, 151, 139);
+}
+
+.flexible10 p {
+  width: 200px;
+  border: black 1px solid;
+  margin: 2px;
+}

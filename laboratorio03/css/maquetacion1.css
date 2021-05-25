@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  width: 100%;
+}
+
+.contenedor {
+  margin: 0;
+  width: 100%;
+  height: 252rem;
+}
+
+nav {
+  background-color: black;
+  margin: 0;
+  width: 100%;
+  height: 5rem;
+}
+
+.logo1 {
+  color: white;
+  margin-top: 11px;
+  margin-left: 25rem;
+  width: 10rem;
+  height: 3.6rem;
+}
+
+.menucaja {
+  color: white;
+  margin-top: 11px;
+  margin-left: 74rem;
+  width: 22rem;
+  height: 2rem;
+}
+
+header {
+  background-color: blueviolet;
+  width: 100%;
+  height: 56rem;
+}

@@ -1,0 +1,33 @@
+body {
+  background-color: purple;
+}
+
+/* DEFINIENDO EL ANCHO Y ALTO DE UNA CAJA */
+.contenedor {
+  background-color: orange;
+  width: 1200px;
+  height: 1000px;
+  margin: auto;
+}
+
+.caja1 {
+  background-color: hotpink;
+  width: 350px;
+  height: 110px;
+  margin-left: 150px;
+}
+
+.caja2 {
+  background-color: orchid;
+  width: 450px;
+  height: 200px;
+  margin-top: 250px;
+  margin-right: 80px;
+}
+
+.caja3 {
+  background-color: peru;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}

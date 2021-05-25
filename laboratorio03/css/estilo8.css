@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+
+* {
+  padding: 10px;
+}
+
+body {
+  background-color: orchid;
+}
+
+.contenedor {
+  background-color: white;
+}
+
+/* TIPO DE LETRA */
+
+.parrafo1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.parrafo2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ESTILOS */
+.parrafo3 {
+  font-style: italic;
+}
+
+.parrafo4 {
+  font-style: oblique;
+}
+
+.parrafo5 {
+  font-style: normal;
+}
+
+.parrafo6 {
+  font-weight: bold;
+}
+
+.parrafo7 {
+  font-weight: bolder;
+}
+
+.parrafo8 {
+  font-variant: small-caps;
+}
+
+.parrafo9 {
+  font-variant: normal;
+}
+
+.parrafo10 {
+  font-size: 30px;
+}
+
+/* UTILIZAMOS LAS FUENTES DE GOOGLE */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"); */
+
+@font-face {
+  font-family: "Dancing Script";
+  src: url("/fonts/DancingScript-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Pacifico Regular";
+  src: url("/fonts/Pacifico-Regular.ttf");
+}
+.parrafo11 {
+  font-family: "Dancing Script";
+}
+
+.parrafo12 {
+  font-family: "Pacifico Regular";
+  font-size: larger;
+}
+
+.parrafo13 {
+  font-family: "Dosis", sans-serif;
+  font-size: 30px;
+}

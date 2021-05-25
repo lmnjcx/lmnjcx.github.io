@@ -1,0 +1,37 @@
+ul {
+  background-color: cornflowerblue;
+  padding: 10px;
+  list-style-type: square;
+  list-style-position: inside;
+  padding: 10px;
+}
+
+ul li {
+  background-color: cornsilk;
+  padding: 3px;
+}
+
+ul li ul {
+  background-color: cyan;
+  padding: 5px;
+  list-style-type: circle;
+  list-style-position: outside;
+  padding: 10px;
+}
+
+ul li ul li {
+  background-color: darkkhaki;
+  padding: 3px;
+}
+
+ul li ul li ul {
+  background-color: coral;
+  list-style-type: disc;
+  list-style-position: inside;
+  padding: 10px;
+}
+
+ul li ul li ul li {
+  background-color: crimson;
+  color: aqua;
+}

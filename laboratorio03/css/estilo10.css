@@ -1,0 +1,76 @@
+.degradado1 {
+  width: 500px;
+  height: 250px;
+  background: repeating-linear-gradient(to bottom, red, blue);
+}
+
+.degradado2 {
+  width: 500px;
+  height: 250px;
+  background: repeating-linear-gradient(to left, red, blue);
+}
+
+.degradado3 {
+  width: 500px;
+  height: 250px;
+  background: repeating-linear-gradient(to top, red, blue);
+}
+
+.degradado4 {
+  width: 500px;
+  height: 250px;
+  background: repeating-linear-gradient(to right, red, blue);
+}
+
+.degradado5 {
+  width: 500px;
+  height: 250px;
+  background: repeating-linear-gradient(
+    to top,
+    red,
+    orange,
+    yellow,
+    green,
+    blue
+  );
+}
+
+.degradado6 {
+  width: 500px;
+  height: 250px;
+  background: repeating-radial-gradient(red, orange, yellow, green, blue);
+}
+
+/* APLICAMOS LOS DEGRADADOS UTILIZANDO ANGULOS DE INCLINACIÓN */
+
+.degradado7 {
+  width: 500px;
+  height: 250px;
+  background: repeating-linear-gradient(180deg, red, white);
+}
+
+.degradado8 {
+  width: 500px;
+  height: 250px;
+  background: repeating-linear-gradient(-90deg, red, white);
+}
+
+.degradado9 {
+  width: 500px;
+  height: 250px;
+  background: repeating-linear-gradient(90deg, red, white);
+}
+
+.degradado10 {
+  width: 500px;
+  height: 250px;
+  background: repeating-linear-gradient(0deg, red, white);
+}
+
+/* GENERAMOS UN DEGRADADO CON UN ANGULO DE INCLINACION ESPECIFICO */
+
+.degradado11 {
+  width: 500px;
+  height: 250px;
+  background: repeating-linear-gradient(70deg, blue yellow);
+}

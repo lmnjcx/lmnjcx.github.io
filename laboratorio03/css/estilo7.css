@@ -1,0 +1,111 @@
+* {
+  padding: 10px;
+}
+
+body {
+  background-color: coral;
+}
+
+.contenedor {
+  background-color: white;
+}
+
+.parrafocolor {
+  color: yellowgreen;
+}
+
+.parrafoderecha {
+  text-align: right;
+}
+
+.parrafocentro {
+  text-align: center;
+}
+
+.parrafoizquierda {
+  text-align: left;
+}
+
+.parrafojustificado {
+  text-align: justify;
+}
+
+.parrafosuperior {
+  vertical-align: top;
+}
+
+.parrafomedio {
+  vertical-align: middle;
+}
+
+.parrafoinferior {
+  vertical-align: bottom;
+}
+
+/* DECORACIONES AL TEXTO */
+
+.parrafosobrelinea {
+  text-decoration: overline;
+}
+
+.parrafosubrayado {
+  text-decoration: underline;
+}
+
+.parrafotachado {
+  text-decoration: line-through;
+}
+
+/* TRANSFORMACIONES AL TEXTO*/
+
+.parrafomayuscula {
+  text-transform: uppercase;
+}
+
+.parrafominuscula {
+  text-transform: lowercase;
+}
+
+.parrafonombrepropio {
+  text-transform: capitalize;
+}
+
+/* ESPACIO PARA TEXTOS */
+
+.parrafosangria {
+  text-indent: 10px;
+}
+
+.parrafoespacio {
+  letter-spacing: 10px;
+}
+
+.parrafoespaciocomprimido {
+  letter-spacing: -2px;
+}
+
+.parrafoespaciolinea {
+  line-height: 2px;
+}
+
+.parrafoespaciolineaamplio {
+  line-height: 7px;
+}
+
+.parrafoespacioletra {
+  word-spacing: 15px;
+}
+
+.parrafoletracomprimido {
+  word-spacing: -2px;
+}
+
+/* SOMBRAS AL TEXTO */
+
+.parrafosombra {
+  text-shadow: 2px 3px orange;
+}
+
+.parrafosombradifuminado {
+  text-shadow: 2px 3px 5px red;
+}
