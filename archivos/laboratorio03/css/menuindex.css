@@ -10,8 +10,7 @@ ul{
     padding: 0;
     width: 15%;
     background-color:darkturquoise ;
-    position: fixed;
-    overflow: auto;
+
     border: 1px solid black;
 }
 
