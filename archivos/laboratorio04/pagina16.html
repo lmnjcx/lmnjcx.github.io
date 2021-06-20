@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript - Parte 4</title>
+    <script type="text/javascript">
+      // Input radio: -> boton de opciones -> RadioButton -> este boton permiteseleccionar dos o mas
+      // opciones en las cuales al seleccionarlas cambia su estado de False a True.
+      // Sintaxis:
+      // <Input type="radio" name="" id="">
+
+      // Input checkbox ->Casilla de verificacion-> checkbox ->este control tiene dos estados:
+      // true marcado, false sin marcar.
+      // Sintaxis:
+      // <input type="checkbox" name="" id="">
+
+      // Para capturar informacion tanto del radio como del checkbox:
+      // nombreVariable=document.getElementById("nombreControl").checked
+
+      // Ejemplo 2:
+      // Desarrollar una aplicacion que permita conocer el sueldo final de un trabajador si se sabe
+      // que el número de horas se ingresa y el costo por hora tambien. Adicional se calculara una bonificacion
+      // de acuerdo a la siguiente tabla:
+      // Categoría   Bonificacion
+      // A           3%
+      // B           5%
+      // C           7%
+      // D           9%
+      // Y un descuento del 5% si existiera tardanza. Mostrar todos los resultados y utilizar:
+      // Formularios
+      // ¿Cuántas variables necesito?
+      // 6
+      // ¿Qué tipo de datos necesito?
+      // Real
+      // ¿Cuáles son las variables que necesito?
+      // nh, sh, sb, bon, des, sf
+      // ¿Qué variables voy a leer?
+      // nh,ch
+      // Declarando funciones
+
+      function calcBasico(numh, cosh) {
+        return numh * cosh;
+      }
+
+      function calcBon(cate, sueb) {
+        b = 0;
+        if (cate == "a") {
+          b = sueb * 0.03;
+        } else if (cate == "b") {
+          b = sueb * 0.05;
+        } else if (cate == "c") {
+          b = sueb * 0.07;
+        } else if (cate == "d") {
+          b = sueb * 0.09;
+        } else {
+          b = 0;
+        }
+        return b;
+      }
+
+      function calcDes(sueb) {
+        return sueb * 0.05;
+      }
+
+      function calcFinal(sueb, boni, desc) {
+        return sueb + boni - desc;
+      }
+
+      function Calcular() {
+        var txtNh = document.getElementById("txtNh");
+        var txtCh = document.getElementById("txtCh");
+        var txtSb = document.getElementById("txtSb");
+        var rbA = document.getElementById("rbA");
+        var rbB = document.getElementById("rbB");
+        var rbC = document.getElementById("rbC");
+        var rbD = document.getElementById("rbD");
+        var txtBon = document.getElementById("txtBon");
+        var chkTar = document.getElementById("chkTar");
+        var txtDes = document.getElementById("txtDes");
+        var txtSf = document.getElementById("txtSf");
+
+        // VALIDANDO EL INGRESO DE DATOS
+
+        if (txtNh.value == "") {
+          alert("Ingrese el número de horas");
+          txtNh.focus();
+        } else if (txtCh.value == "") {
+          alert("Ingrese el costo por hora");
+          txtCh.focus();
+        } else if (
+          rbA.checked == false &&
+          rbB.checked == false &&
+          rbC.checked == false &&
+          rbD.checked == false
+        ) {
+          alert("Seleccione una categoría");
+          rbA.focus();
+        } else {
+          var nh = 0,
+            ch = 0,
+            sb = 0,
+            bon = 0,
+            des = 0,
+            sf = 0;
+          nh = parseFloat(txtNh.value);
+          ch = parseFloat(txtCh.value);
+
+          // LLAMANDO A LAS FUNCIONES -> REALIZANDO OPERACIONES
+          sb = calcBasico(nh, ch);
+          if (rbA.checked) {
+            bon = calcBon("a", sb);
+          } else if (rbB.checked) {
+            bon = calcBon("b", sb);
+          } else if (rbC.checked) {
+            bon = calcBon("c", sb);
+          } else if (rbD.checked) {
+            bon = calcBon("d", sb);
+          } else {
+            bon = 0;
+          }
+
+          if (chkTar.checked) {
+            des = calcDes(sb);
+          } else {
+            des = 0;
+          }
+
+          sf = calcFinal(sb, bon, des);
+          // MOSTRANDO RESULTADOS
+          txtSb.value = sb;
+          txtBon.value = bon;
+          txtDes.value = des;
+          txtSf.value = sf;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form action="">
+      <label for="txtNh">Número de horas: </label>
+      <input type="text" name="txtNh" id="txtNh" />
+      <br />
+
+      <label for="txtCh">Costo por hora: </label>
+      <input type="text" name="txtCh" id="txtCh" />
+      <br />
+
+      <label for="txtSb">Sueldo básico: </label>
+      <input type="text" name="txtSb" id="txtSb" />
+      <br />
+
+      <label for="">Categoría: </label>
+      <input type="radio" name="categoria" id="rbA" />
+      <label for="rbA">A</label>
+      <input type="radio" name="categoria" id="rbB" />
+      <label for="rbB">B</label>
+      <input type="radio" name="categoria" id="rbC" />
+      <label for="rbC">C</label>
+      <input type="radio" name="categoria" id="rbD" />
+      <label for="rbD">D</label>
+      <br />
+
+      <label for="txtBon">Bonificación: </label>
+      <input type="text" name="txtBon" id="txtBon" />
+      <br />
+
+      <label for="">Tardanza</label>
+      <input type="checkbox" name="chkTar" id="chkTar" />
+      <br />
+
+      <label for="txtDes">Descuento: </label>
+      <input type="text" name="txtDes" id="txtDes" />
+      <br />
+
+      <label for="txtSf">Sueldo final: </label>
+      <input type="text" name="txtSf" id="txtSf" />
+      <br />
+      <input
+        type="button"
+        id="btnCalcular"
+        name="btnCalcular"
+        onclick="Calcular()"
+        value="Calcular"
+      />
+      <input type="reset" id="btnLimpiar" name="btnLimpiar" value="Limpiar" />
+    </form>
+    <a href="index.html">Regresar</a>
+  </body>
+</html>

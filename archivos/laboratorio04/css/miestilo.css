@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    font-family: 'Slabo 13px', serif;
+    font-size: 18px;
+    background-color: #f2f2f2;
+}
+
+.contenedor {
+    width: 400px;
+    margin: 40px auto;
+    background: #fff;
+}
+
+.formulario .contenedorinput {
+    padding: 20px;
+    border-radius: 6px 6px 0 0;
+    background: #fff;
+}
+
+.formulario input[type="text"],
+.formulario input[type="mail"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-family: 'Slabo 13px', serif;
+    font-size: 18px;
+}
+
+.formulario input[type="text"]:focus,
+.formulario input[type="mail"]:focus {
+    border-bottom: 2px solid #246eb9;
+}
+
+/* .formulario .botondeopciones input[type="radio"]{
+    display: none;
+} */
+.botondeopciones {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.formulario .botondeopciones {
+    color: #424242;
+    padding: 10px 10px;
+    text-align: center;
+    font-family: 'Slabo 13px', serif;
+    font-size: 18px;
+}
+
+.formulario .botondeopciones label {
+    margin-left: 10px;
+}
+
+.formulario input[type="radio"]:checked+.botondeopciones label {
+    background-color: #f9a03f;
+    color: #fff;
+}
+
+.casilladeverificacion {
+    text-align: center;
+    color: #424242;
+}
+
+.casilladeverificacion label {
+    margin-left: 10px;
+}
+
+.formulario .error {
+    display: none;
+    margin-top: 20px;
+    border-radius: 3px;
+    background: #ce1818;
+    color: #fff;
+    padding: 15px 10px;
+    padding-left: 40px;
+}
+
+.boton {
+    width: 100%;
+    text-align: center;
+    background: #246eb9;
+    color: #fff;
+    border: none;
+    display: block;
+    padding: 15px 10px;
+    cursor: pointer;
+    border-radius: 0 0 6px 6px;
+    font-family: 'Slabo 13px', serif;
+    font-size: 18px;
+}
+
+.formulario .boton:hover {
+    background-color: #4357ad;
+}

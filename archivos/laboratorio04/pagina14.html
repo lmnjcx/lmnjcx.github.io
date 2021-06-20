@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Parte 4</title>
+    <script type="text/javascript">
+    // EJEMPLO 2
+    // Desarrollar una aplicacion que permita calcular el sueldo final de un trabajador si se
+    // sabe que el numero de horas y costo por hora se ingresan. Adicional se calculara una bonificacion y descuento
+    // del 7 y 5 por ciento respectivamente. Mostrar todos los resultados y utilizar formularios.
+    // ¿Cuantas variables necesito?
+    // 6
+    // ¿Que tipo de datos necesito?
+    // Real
+    // ¿Cuales son las variables que necesito?
+    // nh, ch, sb, bon, des, sf
+    // ¿Que variables voy a leeer?
+    // nh, xh
+    
+    function calcBasico(numh,cosh){
+        return numh*cosh;
+    }
+    function calcBon(sueb){
+        return sueb*0.07;
+    }
+    function calcDes(sueb){
+        return sueb*0.05;
+    }
+    function calcFinal(sueb,boni,desc){
+        return sueb+boni+desc;
+    }
+
+    function Calcular(){
+        var txtNh=document.getElementById("txtNh");
+        var txtCh=document.getElementById("txtCh");
+        var txtSb=document.getElementById("txtSb");
+        var txtBon=document.getElementById("txtBon");
+        var txtDes=document.getElementById("txtDes");
+        var txtSf=document.getElementById("txtSf");
+
+        if (txtNh.value==""){
+            alert("Ingrese el número de horas");
+            txtNh.focus();
+        }else if(txtCh.value==""){
+            alert("Ingrese el costo por hora");
+            txtCh.focus();
+        }else{
+            var nh=0, ch=0, sb=0, bon=0, des=0, sf=0;
+            nh=parseFloat(txtNh.value);
+            ch=parseFloat(txtCh.value);
+            
+            // LLAMANDO A LAS FUNCIONES -> REALIZANDO OPERACIONES
+            sb = calcBasico(nh,ch);
+            bon=calcBon(sb);
+            des=calcDes(sb);
+            sf=calcFinal(sb,bon,des);   
+            // MOSTRANDO RESULTADOS
+            txtSb.value=sb;
+            txtBon.value=bon;
+            txtDes.value=des;
+            txtSf.value=sf;
+        }
+    }
+
+
+    </script>
+</head>
+<body>
+    <form action="">
+        <label for="txtNh">Número de horas: </label>
+        <input type="text" name="txtNh" id="txtNh">
+        <br>
+        <label for="txtCh">Costo por hora: </label>
+        <input type="text" name="txtCh" id="txtCh">
+        <br>
+        <label for="txtSb">Sueldo básico: </label>
+        <input type="text" name="txtSb" id="txtSb">
+        <br>
+        <label for="txtBon">Bonificación: </label>
+        <input type="text" name="txtBon" id="txtBon">
+        <br>
+        <label for="txtDes">Descuento: </label>
+        <input type="text" name="txtDes" id="txtDes">
+        <br>
+        <label for="txtSf">Sueldo final: </label>
+        <input type="text" name="txtSf" id="txtSf">
+        <br>
+        <input type="button" id="btnCalcular" name="btnCalcular"
+        onclick="Calcular()" value="Calcular">
+        <input type="reset" id="btnLimpiar" name="btnLimpiar" value="Limpiar">
+    </form>
+    <a href="index.html">Regresar</a>
+</body>
+</html>

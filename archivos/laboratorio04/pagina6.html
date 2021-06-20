@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Parte 3</title>
+    <script type="text/javascript">
+    // ESTRUCTURAS LOGICAS
+    // SE CLASIFICAN EN:
+    // 1. Condicionales
+    // 1.1. Condicionales Simples
+    // Devuelven un valor siempre y cuando la condición sea verdadera
+    // Sintaxis:
+    // if (condicion){
+    //     ---programa---
+    // }
+    // Ejemplo 1:
+    // Desarrollar una aplicacion que permita agregar 3 notasy luego calcular el promedio, si el
+    // promedio es mayor o igual a 13 se debe mostrar un mensaje indicanco 'Aprobado'.
+    // ¿Cuantas variables necesito?
+    // 5
+    // ¿Qué tipo de datos necesito?
+    // Real y texto
+    // ¿Cuales son las variables que necesito?
+    // n1, n2, n3, prom, men
+    
+    var n1=0, n2=0, n3=0, prom=0, men="";
+
+    n1=parseFloat(prompt("Ingrese la nota 1: "));
+    n2=parseFloat(prompt("Ingrese la nota 2: "));
+    n3=parseFloat(prompt("Ingrese la nota 3: "));
+
+    prom=(n1+n2+n3)/3;
+
+    if (prom >=13){
+        men="Aprobado";
+    }
+    
+    alert("El promedio es: "+prom);
+    alert(men);
+
+    // Ejemplo 2:
+    // Desarrollar una aplicacion que permita calcular el sueldo final de un trabajador si se sabe que 
+    // sueldo basico se ingresa, ademas si el trabaajador pertenece a la categoria 3 se le calculara una
+    // bonificacion del 7% y un descuento del 5% en base al sueldo basico.
+
+    // ¿Cuantas variables necesito?
+    // 5
+    // ¿Qué tipo de datos necesito?
+    // Real y entero
+    // ¿Cuales son las variables que necesito?
+    // sb, des, bon, sf, cat
+    // ¿Qué variables voy a leer?
+    // sb y cat
+    
+    var sb=0, des=0, bon=0, sf=0, cat=0;
+
+    sb=parseFloat(prompt("Ingrese el sueldo básico: "));
+    cat=parseInt(prompt("Ingrese la categoria: "));
+
+    if (cat=3){
+        bon=sb*0.07;
+        des=sb*0.05;
+    }
+
+    sf=sb+bon-des;
+
+    document.write("El sueldo basico es: "+sb+"<br>");
+    document.write("La bonificacion es: "+bon+"<br>");
+    document.write("El descuento es: "+des+"<br>");
+    document.write("La categoría es: "+cat+"<br>");
+    document.write("EL sueldo final es: "+sf+"<br>")
+    </script>
+</head>
+<body>
+    <a href="index.html">Regresar</a>
+</body>
+</html>

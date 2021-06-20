@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <titleJ>Javascript - Parte 4</title>
+    <script type="text/javascript">
+    // Funciones y procedimientos en Javascript
+    // Los procedimientos y funciones permiten agrupar codigo de forma modular de tal manera que se pueden tener
+    // bloques de codigo que realicen ciertas funciones
+    // function NombreFuncion(paramateros){
+    //     ...programa...
+    //     return valor;
+    // }
+    // Parametros: Son valores que pueden o no estar presentes en la funcion. Son valores que requiere la funcion
+    // en caso estén presentes
+
+    // Ejemplo 1
+    // Desarrollar una aplicacion que te permtia ingresar dos números y luego permita calcular
+    // las operaciones basicas
+    // ¿Cuantas variables necesito?
+    // 6
+    // ¿Qué tipo de datos necesito?
+    // Real
+    // ¿Cuales son las variables que necesito?
+    // n1, n2, sum, res, div, mul
+    // ¿Que variables voy a leer?
+    // n1, n2
+
+    function calculaSum(num1,num2){
+        return num1+num2;
+    }
+    function calculaRes(num1,num2){
+        return num1-num2;
+    }
+    function calculaMul(num1,num2){
+        return num1*num2;
+    }
+    function calculaDiv(num1,num2){
+        return num1/num2;
+    }
+
+    var n1=0, n2=0, sum=0, res=0, mul=0, div=0;
+
+    n1=parseFloat(prompt("Ingrese el primer número: "));
+    n2=parseFloat(prompt("Ingrese el segundo número: "));
+
+    sum=calculaSum(n1,n2);
+    res=calculaRes(n1,n2);
+    mul=calculaMul(n1,n2);
+    div=calculaDiv(n1,n2);
+    
+    document.write("La suma es: "+sum+"<br>");
+    document.write("La resta es: "+res+"<br>"); 
+    document.write("La multiplicación es: "+mul+"<br>");
+    document.write("La división es: "+div+"<br>");
+    document.write("<hr>");
+    document.write("<hr>");
+    </script>
+    <a href="index.html">Regresar</a>
+</head>
+<body>
+</body>
+</html>

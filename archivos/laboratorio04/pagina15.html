@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Parte 5</title>
+    <script type="text/javascript">
+    // EJEMPLO 3
+    // DESARROLLAR UNA APLICACION QUE PERMITA VISUALIZAR UNA EDAD Y MOSTRAR UN MENSAJE QUE DIGA:
+    // "Eres mayor de edad" y en caso contrario diga "Eres menor de edad".
+
+    // ¿CUÁNTAS VARIABLES NECESITO?
+    // 2
+    // ¿QUÉ TIPO DE VARIABLES NECESITO?
+    // Entero y Texto
+    // ¿CUÁLES SON LAS VARIABLES QUE NECESITO?
+    // edad, mensaje
+    // ¿QUÉ VARIABLES VOY A LEER?
+    // edad
+
+    function mostrar_mensaje(ed){
+        var m=""
+        if (ed>=18){
+            m="Eres mayor de edad";
+        }else{
+            m="Eres menor de edad"
+        }
+        return m;
+    }
+
+    function Mostrar(){
+        // DECLARAMOS VARIABLES PARA LOS CONTROLES
+        var txtEdad=document.getElementById("txtEdad");
+        var txtMen=document.getElementById("txtMen");
+        // VALIDAMOS DATOS DE LAS VARIABLES
+        if (txtEdad.value==""){
+            alert("Ingrese la edad");
+            txtEdad.focus();
+        }else{
+            var edad=0, men="";
+            edad=parseFloat(txtEdad.value);
+            men=mostrar_mensaje(edad);
+            txtMen.value=men
+        }
+    }
+    </script>
+</head>
+<body>
+    <form action="">
+        <label for="txtEdad">Edad:</label>
+        <input type="text" name="txtEdad" id="txtEdad">
+        <br>
+        <label for="txtMen">Mensaje:</label>
+        <input type="text" name="txtMen" id="txtMen">
+        <br>
+        <input type="button" value="Mostrar" id="btnMostrar" name="btnMostrar" onclick="Mostrar()">
+        <input type="reset" value="Limpiar" id="btnLimpiar" name="btnLimpiar">
+    </form>
+    <a href="index.html">Regresar</a>
+</body>
+</html>

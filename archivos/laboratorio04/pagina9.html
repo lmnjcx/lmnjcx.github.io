@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Parte 3</title>
+    <script type="text/javascript">
+    // 2. Conectores Lógicos
+    // Permiten unir dos o mas condiciones 
+    // 2.1. Conector Logico Y
+    // Es verdadero si todas las condiciones son verdaderas
+    // Sintaxis
+    // if(condicion1 && condicion2) -> condicion1=v y condicion2=v -> V
+    // if(condicion1 && condicion2) -> condicion1=v y condicion2=f -> F
+    // 2.2 Conector Logico O
+    // Es falso si ambas condiciones son falsas
+    // Sintaxis
+    // if(condicion1 || condicion2) -> condicion1=v o condicion2=f -> V
+    // if(condicion1 || condicion2) -> condicion1=f o condicion2=f -> F 
+
+    // Ejemplo 1
+    // Desarrollar una aplicacion que permita conocer el sueldo final de un trabajador si se sabe
+    // que pertenece a la categoria 2 y su turno es mañana se le aplicara una bonificacion del 7 %
+    // en caso contrario no se le aplicará ninguna bonificación.
+    // ¿Cuantas variables necesito?
+    // 5
+    // ¿Qué tipo de datos necesito?
+    // Real, entero y texto
+    // ¿Cuales son las variables que necesito?
+    // sb, bon, sf, cat, tur
+    // ¿Qué variables voy a leer?
+    // sb, cat, tur
+    var sb=0, bon=0, sf=0, cat=0, tur="";
+
+    sb=parseFloat(prompt("Ingrese el sueldo básico: "));
+    cat=parseInt(prompt("Ingrese la categoria: "));
+    tur=prompt("Ingrese el turno: |m|, |t| o |n|");
+    
+    if (cat==2 && (tur=="m" || tur=="M")){
+        bon=sb*0.07;
+    }else{
+        bon=0;
+    }
+
+    sf=sb+bon;
+
+    alert("El sueldo basico es: "+sb);
+    alert("La bonificacion es: "+bon);
+    alert("El sueldo final es: "+sf);
+
+    // Ejemplo 2:
+    // Desarrollar una aplicacion que compare tres números entre si y arroje como resultado al
+    // mayor y menor
+
+    var n1=0, n2=0, n3=0, nma=0, nme=0;
+    
+    n1=parseInt(prompt("Ingrese el número 1: "));
+    n2=parseInt(prompt("Ingrese el número 2: "));
+    n3=parseInt(prompt("Ingrese el número 3: "));
+
+    if (n1>n2 && n1>n3){
+        nma = n1;
+    }else{
+        if (n2>n1 && n2>n3){
+            nma = n2;
+        }else{
+            nma=n3
+        }
+    }
+
+    if (n1<n2 && n1<n3){
+        nme = n1;
+    }else{
+        if (n2<n1 && n2<n3){
+            nme = n2;
+        }else{
+            nme=n3
+        }
+    }
+
+    document.write("El número mayor es: "+nma+"<br>");
+    document.write("El número menor es: "+nme+"<br>");
+    document.write("<hr>l")
+    </script>
+</head>
+<body>
+    <a href="index.html">Regresar</a>
+</body>
+</html>
