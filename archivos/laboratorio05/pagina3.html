@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilo3.css">
+    <title>Firebase - Parte 1</title>
+
+</head>
+<body>
+    <div class="container">
+        <form action="" class="formulario">
+            <div class="escrito">
+                <input type="text" name="txtNom" id="txtNom" placeholder="Nombres"><br>
+                <input type="text" name="txtApe" id="txtApe" placeholder="Apellidos"><br>
+                <input type="text" name="txtDNI" id="txtDNI" placeholder="DNI"><br>
+            </div>
+            <div class="marcarCurso">
+                <select name="cboCurso" id="cboCurso">
+                    <option value="0">Seleccione un curso</option>
+                    <option value="Diseño">Diseño</option>
+                    <option value="Base de datos">Base de datos</option>
+                    <option value="Programación Java">Programación Java</option>
+                </select><br>
+            </div>
+            <div class="marcarTurno">
+                <label for="">Turno</label>
+                <input type="radio" name="turno" id="rbM"><label for="rbM">Mañana</label>
+                <input type="radio" name="turno" id="rbT"><label for="rbT">Tarde</label>
+                <input type="radio" name="turno" id="rbN"><label for="rbN">Noche</label>
+                <br>
+            </div>
+            <div class="marcarEstado">
+                <label for="">Estado</label>
+                <input type="checkbox" name="chkEst" id="chkEst">
+                <label for="chkEst">Habilitado</label><br>
+            </div>
+            <input type="button" value="Registrar" id="btnRegistrar" name="btnRegistrar">
+            <input type="reset" value="Limpiar" id="btnLimpiar" name="btnLimpiar">
+            <ul class="error" id="error" name="error"></ul>
+        </form>
+        <hr>
+        <table id="tbAlumno">
+            <thead>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>DNI</th>
+                <th>Curso</th>
+                <th>Turno</th>
+                <th>Estado</th>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <script type="text/javascript" src="js/alumno.js"></script>
+        <script type="text/javascript" src="js/bibliotecaalumno.js"></script>
+    </div>
+</body>
+</html>

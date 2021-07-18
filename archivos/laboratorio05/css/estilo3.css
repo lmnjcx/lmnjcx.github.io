@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Light";
+    src: url(/fonts/Roboto-Light.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: "Roboto-Regular";
+}
+
+body {
+    background: linear-gradient(rgb(25, 82, 134), rgb(0, 0, 0));
+    height: 800px;
+}
+
+.formulario {
+    width: 410px;
+    margin: 40px auto;
+    background-color: rgba(0, 0, 0, 0.288);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.formulario .escrito {
+    padding: 20px;
+    border-radius: 6px 6px 0 0;
+    background: transparent;
+}
+
+.formulario input[type="text"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border: none;
+    border-bottom: 2px solid #bba945;
+    font-size: 18px;
+    background: transparent;
+}
+
+.formulario input[type="text"]::placeholder {
+    font-family: "Roboto-Light";
+    color: yellowgreen;
+}
+
+.formulario input[type="text"]:focus {
+    border-bottom: 2px solid #246eb9;
+}
+
+
+.formulario .marcarCurso #cboCurso {
+    background-color: transparent;
+    color: #bba945;
+    margin-bottom: 30px;
+}
+
+.formulario .marcarTurno {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    color: #bba945;
+}
+
+.formulario input[type="radio"]:checked+.marcarTurno label {
+
+    color: rgb(136, 112, 112);
+}
+
+.marcarEstado {
+    text-align: center;
+    color: #bba945;
+    margin-bottom: 30px;
+}
+
+.marcarEstado label {
+    margin-left: 10px;
+}
+
+#btnRegistrar,
+#btnLimpiar {
+    background-color: transparent;
+    color: yellowgreen;
+    border-radius: 7px;
+}
+
+#btnRegistrar:hover,
+#btnLimpiar:hover {
+    background-color: rgba(255, 255, 255, 0.397);
+}
+
+.formulario .error {
+    display: none;
+    margin-top: 20px;
+    border-radius: 7px;
+    background: #ce1818;
+    color: #fff;
+    padding: 15px 10px;
+    padding-left: 40px;
+}
+
+#tbAlumno {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 auto;
+    padding: 10px;
+    border: #bba9459a 2px solid;
+    color: whitesmoke;
+
+}
+
+#tbAlumno thead th,
+td {
+    border: #bba9459a 2px solid;
+    padding: 5px 15px 5px 15px
+}

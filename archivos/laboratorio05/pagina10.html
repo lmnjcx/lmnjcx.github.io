@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase - Parte 2</title>
+</head>
+<body>
+    <h1>Ingreso al Sistema</h1>
+    <form action="">
+        <label for="txtCor">Correo: </label>
+        <input type="text" name="txtCor" id="txtCor" placeholder="Ingrese su correo"><br>
+        <label for="txtCon">Contraseña: </label>
+        <input type="password" name="txtCon" id="txtCon" placeholder="Ingrese su contraseña"><br>
+        <input type="button" value="Ingresar" id="btnIngresar" name="btnIngresar">
+    </form>
+    <script src="js/bibliotecaIngresoUsuario.js"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-analytics.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+    apiKey: "AIzaSyC1y-hkpecaNDBigEBLVdOddshkiE-ikbA",
+    authDomain: "proyectoweb-33eb1.firebaseapp.com",
+    projectId: "proyectoweb-33eb1",
+    storageBucket: "proyectoweb-33eb1.appspot.com",
+    messagingSenderId: "1096420241253",
+    appId: "1:1096420241253:web:77df5f2b436d66594e3b8c",
+    measurementId: "G-ZC7C06KYWV"
+    };
+  // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+//   CREAMOS UNA CONSTANTE PARA LAS OPCIONES DE AUTENTIFICACION
+  const auth=firebase.auth(); 
+</script>
+</body>
+</html>
