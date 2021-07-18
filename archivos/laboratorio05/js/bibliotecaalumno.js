@@ -64,9 +64,9 @@ function Validar(){
             rbTurno="Noche"
         }
         if(chkEst.checked==false){
-            chkSt="Deshabilitado"
+            st="Deshabilitado"
         }else{
-            chkSt="Habilitado"
+            st="Habilitado"
         }
     }
 }
@@ -76,11 +76,9 @@ function RegistrarDatos(){
     var ape=txtApe.value;
     var dni=txtDni.value;
     var cur=cboCurso.value;
-    // var tur=rbTurno.value;
-    // var est=chkSt.value;
     
     Validar();
-    Registrar(nom,ape,dni,cur,rbTurno,chkEst);
+    Registrar(nom,ape,dni,cur,rbTurno,st);
     MostrarRegistro()
 }
 

@@ -7,7 +7,7 @@ function MostrarRegistro(){
     var nuevoListado=Mostrar();
     tbody=document.querySelector("#tbRegistro tbody");
     tbody.innerHTML="";
-    for(var i=0; i<nuevoListado.lenght; i++){
+    for(var i=0; i<nuevoListado.length; i++){
         var fila=tbody.insertRow(i);
         var titleProducto=fila.insertCell(0);
         var titlePrecio=fila.insertCell(1);

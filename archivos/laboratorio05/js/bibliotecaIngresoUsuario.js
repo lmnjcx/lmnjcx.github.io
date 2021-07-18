@@ -1,4 +1,4 @@
-var txtCor=document.getElementById("txtCor"),
+v  ar txtCor=document.getElementById("txtCor"),
 txtCon=document.getElementById("txtCon"),
 btnIngresar=document.getElementById("btnIngresar");
 
@@ -16,7 +16,8 @@ function Ingresar(){
         alert("Ingrese su contraseña");
         txtCon.focus();
     }else{
-        var cor=txtCor.value, con=txtCon.value;
+        cor=txtCor.value
+        con=txtCon.value
         // llamando a FIREBASE para registrar
         firebase.auth().createUserWithEmailAndPassword(cor, con)
         .then((userCredential) => {

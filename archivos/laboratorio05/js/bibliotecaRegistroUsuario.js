@@ -21,14 +21,14 @@ function Registrar(){
         var cor=txtCor.value, con=txtCon.value;
         // llamando a FIREBASE para registrar
         firebase.auth().createUserWithEmailAndPassword(cor, con)
-    .then((userCredential) => {
-    alert("Se registró el usuario");
-    Limpiar();
-    })
-    .catch((error) => {
-    alert("No se registró el usuario");
-    Limpiar();
-    });
+        .then((userCredential) => {
+        alert("Se registró el usuario");
+        Limpiar();
+        })
+        .catch((error) => {
+        alert("No se registró el usuario");
+        Limpiar();
+        });
     }
 }
 

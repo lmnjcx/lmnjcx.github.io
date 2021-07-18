@@ -80,7 +80,7 @@ function Mostrar() {
   var i = 0;
   //selecciono el tbody de la tabla donde voy a guardar
   tbody = document.querySelector("#tbAlumno tbody");
-  tbody.innerHTML = "";
+  tbody.innerHTML ="";
   //se selecciona la tabla
   var db = database.ref().child("alumno");
   db.once("value", function (snapshot) {
@@ -138,7 +138,7 @@ function Mostrar() {
 }
 
 function MensajeError(m){
-  error.style.display='block';
+  error.style.display="block";
   error.innerHTML="<li>"+m+"</li>"
 }
 
