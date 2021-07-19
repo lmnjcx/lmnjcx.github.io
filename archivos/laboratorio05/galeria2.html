@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/feaadaa574.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/galeria.css">
+    <title>Galeria de Imagenes</title>
+</head>
+<body>
+    <h1>Galerias de imagenes en una ventana modal</h1>
+    <div class="grupo">
+        <ul class="galeria">
+            <li>
+                <a href="#" data-open="modal1">
+                    <img src="img/JapaneseHouse_GoodAtFalling.jpg" alt="tjp">
+                </a>
+            </li>
+            <li>
+                <a href="#" data-open="modal2">
+                    <img src="img/nirvana.jpg" alt="nirvana">
+                </a>
+            </li>
+            <li>
+                <a href="#" data-open="modal3">
+                    <img src="img/bring-me-the-horizon-post-human.jpg" alt="bmth">
+                </a>
+            </li>
+            <li>
+                <a href="#" data-open="modal4">
+                    <img src="img/the weekend.jpg" alt="after hours">
+                </a>
+            </li>
+        </ul>
+    </div> 
+    <div class="modal" id="modal">
+        <div class="ventanaModal">
+            <header class="cabeceraModal">
+                <p id="parrafoCabecera"></p>
+                <button class="cerrarModal" aria-label="cerrarModal" data-close>
+                    <i class="far fa-times-circle"></i>
+                </button>
+            </header>
+            <section class="contenidoModal">
+                <img id="imagenModal" src="img/JapaneseHouse_GoodAtFalling.jpg" alt="Imagen 1">
+            </section>
+            <footer class="pieModal">
+                <p id="parrafoPie"></p>
+            </footer>
+        </div>
+    </div>
+    <a href="index.html">Regresar</a>
+    <script src="js/galeria2.js" type="text/javascript"></script>
+</body>
+</html> 
