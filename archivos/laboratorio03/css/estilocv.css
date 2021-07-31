@@ -149,8 +149,7 @@ table {
   background-color: whitesmoke;
 }
 
-.año {
-}
+.año {}
 
 .año p {
   font-family: "Roboto";
@@ -164,12 +163,11 @@ table {
 .caja {
   position: relative;
   left: 270px;
-  top: -220px;
+  top: -175px;
   width: 280px;
 }
 
-.caja .edu {
-}
+.caja .edu {}
 
 .caja .edu .titleedu {
   font-family: "Roboto Condensed";
@@ -185,6 +183,7 @@ table {
 }
 
 .caja .edu .desc {
+  width: 230px;
   margin-bottom: 50px;
   font-family: "Roboto";
   font-weight: lighter;
