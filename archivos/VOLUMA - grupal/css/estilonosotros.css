@@ -1,0 +1,319 @@
+@font-face {
+    font-family: "MuseoModerno";
+    src: url("/fonts/MuseoModerno-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("/fonts/Quicksand-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Lato-Bold";
+    src: url("/fonts/Lato-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Lato-BoldItalic";
+    src: url("/fonts/Lato-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "Lato-Light";
+    src: url("/fonts/Lato-Light.ttf");
+}
+
+@font-face {
+    font-family: "Lato-Regular";
+    src: url("/fonts/Lato-Regular.ttf");
+}
+
+/* aplicamos estilos universales */
+* {
+margin: 0;
+padding: 0;
+}
+
+/* aplicamos estilos al body */
+body {
+font-size: 16px;
+background-color: #CE845E;
+}
+/* ----------------------CABECERA--------------------- */
+.header{
+	height: 100%;
+    width: 100%;
+    margin: auto;
+	background-size: 100% 100%;
+}
+
+/* -------------------CUERPO------------------- */
+/* -------------------TRABAJOS------------------- */
+/* aplicamos estilos al contenedor */
+.contenedor {
+width: 80%;
+margin: auto;
+background-color: #9B6873;
+background-image: url('imagenes/Fondo17.gif');
+}
+.principal{
+animation-name: shutter-in-top;
+animation-duration: 1s;
+animation-timing-function: ease;
+animation-delay: 0s;
+animation-iteration-count: 1;
+animation-direction: normal;
+animation-fill-mode: none;
+}
+@keyframes shutter-in-top {
+0%{
+-webkit-transform: rotateX(-100deg);
+transform: rotateX(-100deg);
+-webkit-transform-origin: top;
+transform-origin: top;
+opacity: 0;
+}
+100%{
+-webkit-transform: rotateX(0deg);
+transform: rotateX(0deg);
+-webkit-transform-origin: top;
+transform-origin: top;
+opacity: 1;
+} 
+}
+
+.principal .trabajos {
+background-color: #CE845E;
+padding-top: 65px;
+}
+
+.principal .trabajos .titulo {
+font-family: "MuseoModerno";
+font-size: 40px;
+padding-top: 20px;
+margin-bottom: 20px;
+color: #CE845E;
+text-align: center;
+}
+
+.principal .trabajos .contenedortrabajos {
+justify-content: space-between;
+display: flex;
+justify-content: center;
+padding-top: 20px;
+padding-bottom: 10px;
+}
+
+.principal .trabajos .contenedortrabajos .trabajo {
+width: 80%;
+max-width: 1000px;
+max-height: 180px;
+margin-top: 20px;
+margin-bottom: 20px;
+display: flex;
+flex-direction: row-reverse;
+background-color: white;
+margin-right: 3%;
+margin-left: 3%;
+border-radius: 5px;
+transition: all 100ms;
+}
+.trabajo:hover{
+	transform: scale(1.15);
+}
+
+
+.principal .trabajos .contenedortrabajos .trabajo .imagen {
+width: 20%;
+}
+
+.principal .trabajos .contenedortrabajos .trabajo .imagen img {
+width: 100%;
+height: 100%;
+border-radius: 5px;
+}
+
+.principal .trabajos .contenedortrabajos .trabajo .descripcion {
+text-align: justify;
+width: 80%;
+}
+
+.principal .trabajos .contenedortrabajos .trabajo .descripcion .nombre {
+font-family: "MuseoModerno";
+font-size: 1.8rem;
+color: #431382;
+margin-top: 25px;
+margin-left: 40px;
+margin-right: 40px;
+}
+
+.principal .trabajos .contenedortrabajos .trabajo .descripcion .categoria {
+font-weight: bolder;
+font-family: cursive;
+font-size: 1.2rem;
+margin-top: 10px;
+margin-left: 40px;
+margin-right: 40px;
+margin-bottom: 15px;
+padding-left: 5px;
+padding-right: 5px;
+color: blueviolet;
+}
+.principal .trabajos .contenedortrabajos .productos {
+width: 50%;
+max-width: 400px;
+margin-top: 20px;
+margin-bottom: 20px;
+margin-right: 3%;
+margin-left: 3%;
+text-align: center;
+padding-top: 80px;
+font-size: 25px;
+font-family: cursive;
+border-radius: 5px;
+transition: all 100ms;
+}
+.productos:hover{
+transform: scale(1.2);
+}
+/* --------------FIN TRABAJOS--------------- */
+/* ----------------FIN CUERPO------------------ */
+
+/* ------------------------NAV------------------------------ */
+
+nav {
+    width: 100%;
+    max-width: 1600px;
+    height: 4rem;
+    background-color: rgba(0, 0, 0, 0.70);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-content: center;
+}
+
+.logo {
+    font-family: "MuseoModerno";
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul {
+    width: 60rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: auto;
+    list-style: none
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: "MuseoModerno";
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    opacity: 100%;
+    color: #CE845E;
+}
+
+a {
+    color: blueviolet;
+    text-decoration: none;
+    font-family: "Lato-BoldItalic";
+    font-size: 1.1rem;
+    font-family: cursive;
+}
+
+a:hover {
+    opacity: 100%;
+    color: #CE845E;
+}
+
+.productos a {
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "MuseoModerno";
+}
+
+.productos a:hover {
+    opacity: 50%;
+    color: blue;
+}
+
+/* -----------------------FOOTER-------------------------------------- */
+
+footer {
+    width: 100%;
+    height: 22rem;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.a4 {
+    width: 50rem;
+    max-width: 800px;
+    height: 18rem;
+    margin: 0 auto;
+    position: relative;
+    top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.b5 {
+    flex-grow: 0.5;
+    line-height: 2rem;
+}
+
+.b5 h3 {
+    font-family: "MuseoModerno";
+    color: gray;
+}
+
+.b5 ul {
+    list-style: none;
+    line-height: 1.7rem;
+}
+
+.b5 ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: cursive;
+}
+
+.b5 ul a:hover {
+    opacity: 100%;
+    color: #CE845E;
+}
+
+.icons {
+    width: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons a {
+    color: white;
+    font-size: 2.2rem;
+}
+
+.icons a:hover {
+    color: lightgoldenrodyellow;
+}
+
+small {
+    font-family: "Quicksand";
+    color: white;
+    width: 7rem;
+    margin: 0 auto;
+    position: relative;
+    right: -22rem;
+}

@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "Quicksand";
+    src: url("/fonts/Quicksand-VariableFont_wght.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Quicksand";
+}
+
+body {
+    font-size: 16px;
+}
+
+.container {
+    position: absolute 0;
+    width: 100%;
+    background: repeating-linear-gradient(180deg rgb(49, 41, 97) black);
+}
+
+header {
+    width: 100%;
+    height: 2.8rem;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.logo1 {
+    font-family: "MuseoModerno";
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    margin: auto;
+}
+
+section {
+    width: 100%;
+    height: 700px;
+
+}
+
+.a1 {
+    position: relative;
+    top: 5rem;
+    width: 75%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.b1,
+.b2 {
+    display: flex;
+    flex-direction: column;
+}

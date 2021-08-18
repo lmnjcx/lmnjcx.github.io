@@ -1,0 +1,265 @@
+@font-face {
+    font-family: "MuseoModerno";
+    src: url("/fonts/MuseoModerno-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("/fonts/Quicksand-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Lato-Bold";
+    src: url("/fonts/Lato-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Lato-BoldItalic";
+    src: url("/fonts/Lato-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "Lato-Light";
+    src: url("/fonts/Lato-Light.ttf");
+}
+
+@font-face {
+    font-family: "Lato-Regular";
+    src: url("/fonts/Lato-Regular.ttf");
+}
+
+html {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: blue;
+    position: absolute 0;
+    width: 100%;
+}
+
+/* ------------------------------------------------------ */
+
+nav {
+    width: 100%;
+    height: 4rem;
+    background-color: rgba(0, 0, 0, 0.70);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-content: center;
+}
+
+.logo {
+    font-family: "MuseoModerno";
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul {
+    width: 60rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: auto;
+    list-style: none
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+    font-family: "MuseoModerno";
+    font-size: 1rem;
+}
+
+nav ul a:hover {
+    text-decoration: underline white 0.1rem;
+}
+
+/* ------------------------------------------------------------------- */
+section {
+    width: 100%;
+    height: 55rem;
+    background: repeating-linear-gradient(aquamarine, black);
+}
+
+.a1 {
+    width: 55rem;
+    height: 40rem;
+    margin: 0 auto;
+    position: relative;
+    top: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.b1 {
+    height: 23rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#txtUni {
+    font-family: "MuseoModerno";
+    font-size: 1rem;
+    border: none;
+    background-color: transparent;
+}
+
+.productName {
+    font-family: "Quicksand";
+    color: black;
+    font-size: 2.2rem;
+}
+
+.c1 {
+    line-height: 3rem;
+}
+
+#txtPrc {
+    height: 2rem;
+    width: 5rem;
+    background-color: transparent;
+    font-family: "MuseoModerno";
+    font-size: 1.5rem;
+    border: none;
+
+}
+
+#cboDir {
+    height: 1.5rem;
+    font-family: "Quicksand";
+    font-weight: bold;
+    background-color: transparent;
+}
+
+#chkRap {
+    height: 0.8rem;
+}
+
+#cboCnt {
+    height: 1.5rem;
+    font-family: "Quicksand";
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+#btnPrc {
+    width: 8rem;
+    height: 1.8rem;
+    font-family: "MuseoModerno";
+    border-radius: 1rem;
+    border: none;
+    background-color: rgba(250, 240, 230, 0.479);
+}
+
+#btnPrc:hover {
+    background-color: rgba(214, 147, 84, 0.548);
+}
+
+#btnComprar {
+    width: 10rem;
+    height: 3rem;
+    margin-top: 2rem;
+    border: none;
+    font-family: "Quicksand";
+    font-weight: bold;
+    background-color: rgba(250, 240, 230, 0.479);
+    border-radius: 2rem;
+}
+
+#btnComprar:hover {
+    background-color: rgba(214, 147, 84, 0.548);
+}
+
+label {
+    font-family: "Quicksand";
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+img {
+    width: 25rem;
+    height: 25rem;
+    margin-right: 5rem;
+    border: black solid 0.15rem;
+}
+
+/* ------------------------------------------------------------------- */
+footer {
+    width: 100%;
+    height: 22rem;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.a4 {
+    width: 60rem;
+    height: 18rem;
+    margin: 0 auto;
+    position: relative;
+    top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.b5 {
+    flex-grow: 0.5;
+    line-height: 2rem;
+}
+
+.b5 p {
+    font-family: "Lato-Bold";
+    color: gray;
+}
+
+.b5 ul {
+    list-style: none;
+    line-height: 1.7rem;
+}
+
+.b5 ul a {
+    text-decoration: none;
+    color: white;
+    font-family: "Lato-Regular";
+}
+
+.b5 ul a:hover {
+    text-decoration: underline white 0.1rem;
+}
+
+.icons {
+    width: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons a {
+    color: white;
+    font-size: 2.2rem;
+}
+
+.icons a:hover {
+    color: rgb(199, 137, 137);
+}
+
+small {
+    font-family: "Quicksand";
+    color: white;
+    width: 7rem;
+    margin: 0 auto;
+    position: relative;
+    right: -27rem;
+}

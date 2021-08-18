@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "MuseoModerno";
+  src: url("/fonts/MuseoModerno-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("/fonts/Quicksand-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("/fonts/Lato-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Lato-BoldItalic";
+  src: url("/fonts/Lato-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "Lato-Light";
+  src: url("/fonts/Lato-Light.ttf");
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("/fonts/Lato-Regular.ttf");
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.contenedor {
+  margin: 0 auto;
+  width: 100%;
+}
+
+header {
+  width: 1920px;
+  max-width: 100%;
+  min-width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: blue;
+}

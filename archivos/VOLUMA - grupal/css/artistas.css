@@ -1,0 +1,282 @@
+@font-face {
+    font-family: "MuseoModerno";
+    src: url("/fonts/MuseoModerno-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("/fonts/Quicksand-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Lato-Bold";
+    src: url("/fonts/Lato-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Lato-BoldItalic";
+    src: url("/fonts/Lato-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "Lato-Light";
+    src: url("/fonts/Lato-Light.ttf");
+}
+
+@font-face {
+    font-family: "Lato-Regular";
+    src: url("/fonts/Lato-Regular.ttf");
+}
+
+html {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: blue;
+    position: absolute 0;
+    width: 100%;
+}
+
+/* ------------------------------------------------------ */
+
+nav {
+    width: 100%;
+    height: 4rem;
+    background-color: rgba(0, 0, 0, 0.70);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-content: center;
+}
+
+.logo {
+    font-family: "MuseoModerno";
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul {
+    width: 60rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: auto;
+    list-style: none
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+    font-family: "MuseoModerno";
+    font-size: 1rem;
+}
+
+nav ul a:hover {
+    opacity: 65%;
+}
+
+/* -------------------------------------------------------------- */
+section {
+    width: 100%;
+    height: 90rem;
+    display: flex;
+
+    background: repeating-linear-gradient(135deg, rgb(110, 110, 155), black);
+
+}
+
+.a1 {
+    width: 42rem;
+    height: 70rem;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 8rem;
+    left: -3rem;
+}
+
+.title {
+    position: relative;
+    left: -2rem;
+    font-family: "MuseoModerno";
+    color: white;
+    font-size: 1.8rem;
+}
+
+.b1 {
+    width: 44rem;
+    height: 62rem;
+    margin-top: 2rem;
+    position: relative;
+    left: -2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.c1 {
+    width: 26rem;
+    height: 13rem;
+}
+
+.d1 {
+    width: 20rem;
+    height: 10rem;
+    background-color: rgb(103, 118, 131);
+}
+
+.e1 {
+    width: 11rem;
+    height: 1rem;
+    position: relative;
+    left: -1rem;
+    top: 0.8rem;
+    background-color: rgba(58, 79, 170, 0.705);
+    font-family: "quicksand";
+    font-size: 0.8rem;
+    color: white;
+}
+
+.e2 {
+    width: 13rem;
+    height: 2.3rem;
+    z-index: 10;
+    position: relative;
+    top: 1.8rem;
+    left: -1.5rem;
+    font-family: "museomoderno";
+    font-size: 1rem;
+
+    background-color: rgba(27, 21, 63, 0.822);
+    color: white;
+}
+
+.d1 a {
+    position: relative;
+    top: -5rem;
+    left: 1rem;
+    font-family: "quicksand";
+    font-size: 0.8rem;
+    color: rgb(139, 233, 186);
+    text-decoration: none;
+}
+
+.d1 img {
+    width: 10rem;
+    position: relative;
+    top: -5rem;
+    left: 4rem;
+}
+
+/* -------------------------------------------------------------- */
+aside {
+    width: 18rem;
+    height: 86rem;
+    position: relative;
+    top: 4rem;
+    background-color: rgb(223, 209, 209);
+    border-right: black solid 0.1rem;
+}
+
+form {
+    width: 15rem;
+    margin: 0 auto;
+    position: relative;
+    top: 4rem;
+    line-height: 2.5rem;
+}
+
+label {
+    font-family: "Quicksand";
+    font-size: 0.9rem;
+}
+
+input {
+    float: right;
+}
+
+.busqueda {
+    background-color: transparent;
+    border: none;
+}
+
+/* -------------------------------------------------------------- */
+footer {
+    width: 100%;
+    height: 22rem;
+
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.a4 {
+    width: 60rem;
+    height: 18rem;
+    margin: 0 auto;
+    position: relative;
+    top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.b5 {
+    flex-grow: 0.5;
+    line-height: 2rem;
+}
+
+.b5 p {
+    font-family: "Lato-Bold";
+    color: gray;
+}
+
+.b5 ul {
+    list-style: none;
+    line-height: 1.7rem;
+}
+
+.b5 ul a {
+    text-decoration: none;
+    color: white;
+    font-family: "Lato-Regular";
+}
+
+.b5 ul a:hover {
+    opacity: 65%;
+}
+
+.icons {
+    width: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons a {
+    color: white;
+    font-size: 2.2rem;
+}
+
+.icons a:hover {
+    color: rgb(199, 137, 137);
+}
+
+small {
+    font-family: "Quicksand";
+    color: white;
+    width: 7rem;
+    margin: 0 auto;
+    position: relative;
+    right: -27rem;
+}
