@@ -85,7 +85,7 @@ header .headerright img {
 
 .sectionleft {
   width: 450px;
-  height: 850px;
+  height: 950px;
   position: absolute;
   bottom: 0;
   background-color: rgb(226, 236, 248);
@@ -142,14 +142,13 @@ table {
 
 .sectionright {
   width: 550px;
-  height: 850px;
+  height: 950px;
   position: absolute;
   bottom: 0;
   left: 450px;
   background-color: whitesmoke;
 }
 
-.año {}
 
 .año p {
   font-family: "Roboto";
@@ -163,11 +162,10 @@ table {
 .caja {
   position: relative;
   left: 270px;
-  top: -175px;
+  top: -215px;
   width: 280px;
 }
 
-.caja .edu {}
 
 .caja .edu .titleedu {
   font-family: "Roboto Condensed";
